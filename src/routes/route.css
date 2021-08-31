@@ -1,0 +1,108 @@
+/* Google Github Sign in btn */
+.ThridSignIn {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ThridSignIn button {
+  width: 300px;
+  margin-top: 10px;
+}
+
+/* Navigation */
+
+.Navigation {
+  display: flex;
+  justify-content:center;
+  margin-bottom: 30px;
+}
+
+.Navigation div{
+  margin: 0 10px;
+}
+
+/* NweetFactory */
+
+.factory_input_form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.factoryInput__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.factoryInput__input {
+  flex-grow: 1;
+  height: 40px;
+  padding: 0px 20px;
+
+  border: 1px solid #04aaff;
+
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.factoryInput__arrow {
+  position: absolute;
+  right: 0;
+  background-color: #04aaff;
+  height: 40px;
+  width: 40px;
+
+  text-align: center;
+  color: white;
+
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.factoryInput__label {
+  color: #04aaff;
+  cursor: pointer;
+  text-align: center;
+}
+
+.factoryInput__label span {
+  margin-right: 10px;
+  font-size: 12px;
+}
+
+.factoryForm__attachment {
+  /* display: flex;
+    flex-direction: column; */
+  justify-content: center;
+}
+
+.factoryForm__attachment img {
+  height: 80px;
+  width: 80px;
+}
+
+.factoryForm__clear {
+  color: #04aaff;
+  cursor: pointer;
+  text-align: center;
+}
+
+.factoryForm__clear span {
+  margin-right: 10px;
+  font-size: 12px;
+}
+
+.home_nweet{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
