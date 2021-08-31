@@ -3,7 +3,7 @@ import { dbService, storageService } from "../fbase";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrash, faPencilAlt } from "@fortawesome/free-solid-svg-icons";
 
-function Nweet({ nweetObj, isOwner, userObj }) {
+function Nweet({ nweetObj, isOwner, userObj,creatorId }) {
   const [editing, setEditing] = useState(false);
   const [newNweet, setNewNweet] = useState(nweetObj.text);
 
@@ -39,6 +39,7 @@ function Nweet({ nweetObj, isOwner, userObj }) {
 
   return (
     <div className="nweet">
+
       {editing ? (
         <>
           {isOwner && (
@@ -55,7 +56,7 @@ function Nweet({ nweetObj, isOwner, userObj }) {
         </>
       ) : (
         <>
-          <span className="Nweet_profile">{userObj.displayName}</span>
+          <span className="Nweet_profile">{nweetObj.userName}</span>
           <h4>{nweetObj.text}</h4>
           {nweetObj.attachmentUrl && <img src={nweetObj.attachmentUrl} />}
           {isOwner && (

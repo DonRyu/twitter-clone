@@ -23,10 +23,12 @@ function NweetFactory({ userObj }) {
       createAt: Date.now(),
       creatorId: userObj.uid,
       attachmentUrl,
+      userName:userObj.displayName
     };
     await dbService.collection("nweets").add(nweetObj);
     setNweet("");
     setAttachment("");
+    
   };
 
   const onChange = (event) => {

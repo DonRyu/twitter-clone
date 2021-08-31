@@ -24,10 +24,12 @@ function Home({ userObj }) {
 
   return (
     <div>
+
       <NweetFactory userObj={userObj} />
       <div className="home_nweet">
         {nweets.map((nweet) => {
-          return <Nweet key={nweet.id} nweetObj={nweet} isOwner={nweet.creatorId === userObj.uid} userObj={userObj} />;
+          return <Nweet key={nweet.id} nweetObj={nweet} 
+          isOwner={nweet.creatorId === userObj.uid} userObj={userObj} />;
         })}
       </div>
     </div>
